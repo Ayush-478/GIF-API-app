@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    padding: 2rem;
+}
+
+.img_cont{
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+    width: 85vh;
+    height: 70vh;
+    position: relative;
+    left: -10vw;
+}
+
+img{
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
