@@ -20,10 +20,11 @@ class gif_search{
     }
 }
 
-searchquery.addEventListener('keyup', (e)=>{
-    console.log(e.key)
-    if (e.key == "Enter"){
-        let obj = new gif_search(searchquery.value);
-        obj.get_img();
-    }
+window.onload=function(){
+    searchquery.addEventListener('keyup', (e)=>{
+        if (e.key == "Enter"){
+            let obj = new gif_search(searchquery.value);
+            obj.get_img();
+        }
 })
+}
