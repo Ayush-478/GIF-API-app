@@ -1,4 +1,4 @@
-const submit = document.getElementById('submit');
+
 const searchquery = document.getElementById('searchquery');
 const api_key = 'Y5LfQG2HENBblYMGcVX57PY3NFeFcg7n'
 const div_cont = document.getElementsByClassName('img_cont')[0]
@@ -19,11 +19,6 @@ class gif_search{
         div_cont.appendChild(gifimg)
     }
 }
-
-submit.addEventListener('click', (e)=>{
-    let obj = new gif_search(searchquery.value);
-    obj.get_img();
-})
 
 searchquery.addEventListener('keyup', (e)=>{
     if (e.key == "Enter"){
